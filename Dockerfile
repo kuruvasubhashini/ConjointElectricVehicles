@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 COPY requirements.txt /tmp/
-COPY ./app /app
+COPY ./app 
 WORKDIR "/app"
 RUN conda install --file /tmp/requirements.txt
 ENTRYPOINT [ "python3" ]
