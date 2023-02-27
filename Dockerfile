@@ -1,5 +1,4 @@
 FROM continuumio/miniconda3
-COPY requirements.txt /tmp/
 COPY ./app 
 WORKDIR "/app"
 RUN conda install --file /tmp/requirements.txt
